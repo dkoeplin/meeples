@@ -1,6 +1,6 @@
 package com.ironclad49er.meeples;
 
-import com.ironclad49er.meeples.init.Entities;
+import com.ironclad49er.meeples.init.EntityTypes;
 import com.ironclad49er.meeples.config.Sides;
 
 import net.minecraftforge.fml.common.Mod;
@@ -21,7 +21,7 @@ public class MeeplesMod {
         final ModLoadingContext modLoadingContext = ModLoadingContext.get();
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        Entities.ENTITY_TYPES.register(modEventBus);
+        EntityTypes.ENTITY_TYPES.register(modEventBus);
 
         modLoadingContext.registerConfig(ModConfig.Type.CLIENT, Sides.CLIENT_SPEC);
         modLoadingContext.registerConfig(ModConfig.Type.SERVER, Sides.SERVER_SPEC);
