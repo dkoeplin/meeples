@@ -17,7 +17,7 @@ public final class EntityTypes {
     public static final String MEEPLE_NAME = "meeple";
     public static final RegistryObject<EntityType<MeepleEntity>> MEEPLE = ENTITY_TYPES.register(MEEPLE_NAME, () ->
             EntityType.Builder.create(MeepleEntity::new, EntityClassification.CREATURE)
-                    .size(EntityType.PIG.getWidth(), EntityType.PIG.getHeight())
+                    .size(0.514f, 0.9f)
                     .build(new ResourceLocation(MeeplesMod.MODID, MEEPLE_NAME).toString())
     );
 }
